@@ -5,8 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/globalStyles.css">
+    <link rel="stylesheet" href="/src/styles/index.css">
+
+    <script src="/src/scripts/requests.js" defer></script>
+    <script src="/src/scripts/index.js" defer></script>
+
     <title>Consumindo PokeAPI</title>
   </head>
+  <body>
+    <main class="main__container">
+      <nav class="nav__container">
+        <div class="nav__box">
+          <img class="main__logo" src="/src/assets/pokeapi.png" alt="Logo">
+          <div class="search__container">
+            <input class="search__input" placeholder="Pesquisar por...">
+            <img class="search__icon" src="/src/assets/search-icon.png" alt="search-icon">
+          </div>
+        </div>
+        <p class="main__text">Lista de Pokémon</p>
+        <p id="loading">Carregando...</p>
+      </nav>
+      <ul class="main__list"></ul>
+    </main>
+  </body>
 
-  <body></body>
 </html>

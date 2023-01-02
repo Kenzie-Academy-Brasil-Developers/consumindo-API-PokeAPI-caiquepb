@@ -1,1 +1,148 @@
-/* Monte sua estilização aqui */
+.main__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 33px;
+    background: var(--color-background-1);
+
+    min-height: 100vh;
+    height: 100%;
+}
+
+.nav__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+}
+
+.nav__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+
+    width: 100%;
+}
+
+.main__logo{
+    width: 125px;
+    height: 50.1px;
+
+    cursor: pointer;
+}
+
+.search__container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    width: 87.5%;
+}
+
+.search__input{
+    padding: 15px 24px;
+    width: inherit;
+    height: 52px;
+
+    background: var(--color-background-2);
+    border: 0;
+    border-radius: 8px;
+
+    font-size: 16px;
+    color: var(--color-text-3);
+}
+
+.search__icon{
+    padding: 15.5px 27px;
+    width: 72px;
+    height: 52px;
+
+    background: var(--color-background-button);
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.main__text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: var(--color-text-1);
+
+    padding-top: 37px;
+    padding-bottom: 74px;
+}
+
+.hidden{
+    display: none;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+
+    width: 100%;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: 87.5%;
+    height: 60px;
+
+    background: var(--color-background-2);
+    border-radius: 8px;
+}
+
+li > img{
+    width: 60px;
+    height: 60px;
+}
+
+li > h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--color-text-2);
+}
+
+li > h3::first-letter{
+    text-transform: uppercase;
+}
+
+@media(min-width: 720px){
+    .main__container{
+        padding: 36px 16.5%;
+    }
+
+    .nav__box{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .search__container{
+        justify-content: end;
+    }
+
+    .search__input{
+        width: 233px;
+    }
+
+    .main__text{
+        padding-top: 91px;
+    }
+
+    li{
+        width: 100%;
+    }
+
+}
